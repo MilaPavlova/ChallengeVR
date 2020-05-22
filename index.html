@@ -65,10 +65,17 @@
             realistic-->
             <a-sphere id="mercury" position="0 0 6" radius=".4" src="#mercury-texture"></a-sphere>
             <a-sphere id="venus" position="0 0 8.5" radius=".4" src="#venus-texture"></a-sphere>
-            <a-sphere id="mars" position="0 0 12.5" radius=".4" src="#mars-texture"></a-sphere>
             <a-sphere id="jupiter" position="0 0 24" radius="2.5" src="#jupiter-texture"></a-sphere>
             <a-sphere id="pluto" position="0 0 46" radius=".4" src="#pluto-texture"></a-sphere>
-
+            <a-sphere id="mars" position="0 0 12.5" radius=".4" src="#mars-texture">
+                <a-animation attribute="rotation"
+                            from="0 0 0"
+                            to="0 360 0"
+                            dur="15000"
+                            repeat="indefinite"
+                            easing="linear">
+              </a-animation>
+            </a-sphere>
 
             <a-entity id="earth-and-moon" position="0 0 10.5">
                 <a-sphere position="0 0 0" radius=".5" color="#6DCBE7" id="earth" src="#earth-texture"> </a-sphere>
