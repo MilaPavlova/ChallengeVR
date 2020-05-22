@@ -1,18 +1,22 @@
 <html>
 
     <head>
-        <title>A-Frame Starter Kit - Mini Fancy Planetarium</title>
+        <title>A-Frame Galaxy</title>
         <meta name="description" content="Build your own planetarium with A-frame">
         <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 
         <!-- let's extend A-Frame with a star system component so we can get a
         starry background -->
         <script src="https://unpkg.com/aframe-star-system-component@1.0.0/index.js"></script>
+        <!--Mountains try-->
+        <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-mountain-component@^0.3.2/aframe-mountain-component.min.js"></script>
     </head>
 
     <body>
         <a-scene>
-
+          <a-mountain color="red"></a-mountain>
+          <a-entity mountain="color: red"></a-entity>
             <!-- our assets section is where we organize images, audio, and
             other files we want to include in our scene. They can be referenced
             later by their ID -->
